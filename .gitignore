@@ -1,0 +1,22 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# Environment
+.env
+
+# React
+node_modules/
+dist/
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db

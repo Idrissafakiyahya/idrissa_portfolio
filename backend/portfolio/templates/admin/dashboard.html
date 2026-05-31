@@ -1,0 +1,73 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+
+<style>
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #1e293b;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.card h2 {
+    font-size: 32px;
+    color: #38bdf8;
+    margin: 0;
+}
+
+.card p {
+    margin: 5px 0 0;
+    color: #cbd5e1;
+}
+
+h1 {
+    color: white;
+}
+</style>
+
+<h1>📊 Admin Dashboard</h1>
+
+<div class="stats">
+
+    <div class="card">
+        <h2>{{ projects_count }}</h2>
+        <p>Projects</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ skills_count }}</h2>
+        <p>Skills</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ tools_count }}</h2>
+        <p>Tools</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ certificates_count }}</h2>
+        <p>Certificates</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ messages_count }}</h2>
+        <p>Total Messages</p>
+    </div>
+
+    <div class="card">
+        <h2>{{ unread_messages }}</h2>
+        <p>Unread Messages</p>
+    </div>
+
+</div>
+
+{% endblock %}
